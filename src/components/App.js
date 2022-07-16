@@ -29,7 +29,7 @@ export class App extends Component {
     console.log(this.props);
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
-    const feedbackPercent = this.countPositiveFeedbackPercentage();
+    const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
       <div>
@@ -37,7 +37,7 @@ export class App extends Component {
           keys={keys}
           onHandleIncrement={this.handleIncrement}
           total={total}
-          feedbackPercent={feedbackPercent}
+          positivePercentage={positivePercentage}
           good={good}
           neutral={neutral}
           bad={bad}
