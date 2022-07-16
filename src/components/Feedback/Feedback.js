@@ -33,7 +33,9 @@ const Feedback = ({
       <li className="FeedbackList__item">Neutral: {neutral}</li>
       <li className="FeedbackList__item">Bad: {bad}</li>
       <li className="FeedbackList__item">Total: {total}</li>
-      <li className="FeedbackList__item">feedbackPercent: {feedbackPercent}</li>
+      <li className="FeedbackList__item">
+        feedbackPercent: {feedbackPercent}%
+      </li>
     </ul>
   </>
 );
