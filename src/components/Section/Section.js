@@ -1,8 +1,6 @@
-// /* Створи компонент <Section title="">, який рендерить секцію із заголовком
-// і дітей (children). Обгорни кожен із <Statistics> і <FeedbackOptions> у
-// створений компонент секції. */
-
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Section.css';
 
 const Section = ({ title, children }) => {
   return (
@@ -11,6 +9,11 @@ const Section = ({ title, children }) => {
       {children}
     </div>
   );
+};
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
 };
 
 export default Section;
