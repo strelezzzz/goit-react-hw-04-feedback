@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './message.css';
+import css from './message.module.css';
 
-const Notification = ({ message }) => <h2 className="message">{message}</h2>;
+const Notification = ({ message }) => <p className={css.message}>{message}</p>;
 
 Notification.propTypes = {
   message: PropTypes.string.isRequired,

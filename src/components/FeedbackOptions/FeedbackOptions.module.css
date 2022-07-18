@@ -1,0 +1,23 @@
+.FeedbackListBtn {
+  display: flex;
+  justify-content: space-evenly;
+  width: 240px;
+}
+
+.button {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 5 10px;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(250, 250, 250);
+  outline: auto;
+}
+
+.button:active {
+  background-color: rgb(238, 147, 10);
+}
